@@ -26,6 +26,10 @@ private slots:
     void on_radioButton_3_toggled(bool checked);
     void on_radioButton_4_toggled(bool checked);
 
+    void on_pushButton_left_clicked(bool checked);
+
+    void on_pushButton_right_clicked(bool checked);
+
 private:
     Ui::MainWindow* ui;
     SignalGenerator m_siggen;

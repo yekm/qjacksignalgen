@@ -81,3 +81,13 @@ void MainWindow::on_radioButton_4_toggled(bool checked)
     if (checked)
         m_current_waveform = SignalGenerator::Waveform::W_SAWTOOTH;
 }
+
+void MainWindow::on_pushButton_left_clicked(bool checked)
+{
+    m_siggen.enable_left(checked);
+}
+
+void MainWindow::on_pushButton_right_clicked(bool checked)
+{
+    m_siggen.enable_right(checked);
+}

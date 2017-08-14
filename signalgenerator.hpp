@@ -13,6 +13,7 @@ public:
     };
 
     SignalGenerator();
+    void put_value_to_buffer(jack_default_audio_sample_t v, audioBufVector & outBufs);
     virtual int audioCallback(jack_nframes_t nframes, audioBufVector inBufs,
         audioBufVector outBufs);
 
@@ -20,6 +21,8 @@ public:
     void set_global_volume(double volume);
     void start_waveform_generation();
     void stop_waveform_generation();
+    void enable_right(bool enable);
+    void enable_left(bool enable);
 
 private:
     Waveform m_waveform = Waveform::W_SINE;
@@ -31,5 +34,7 @@ private:
     unsigned int m_pos = 0;
 
     bool m_playing = true; // unused
+    unsigned int buffer_index = 0;
+    bool m_left = true, m_right = true;
 };
 #endif // SIGNALGENERATOR_HPP

@@ -99,6 +99,32 @@
          </widget>
         </item>
         <item>
+         <widget class="QPushButton" name="pushButton_left">
+          <property name="text">
+           <string>Left</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_right">
+          <property name="text">
+           <string>Right</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
          <widget class="QRadioButton" name="radioButton">
           <property name="text">
            <string>Sine</string>
